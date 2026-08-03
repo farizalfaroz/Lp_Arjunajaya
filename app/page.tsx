@@ -70,6 +70,12 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="trust-strip" aria-label="Ringkasan LKP Arjuna Jaya">
+        <div><b>13+</b><span>Tahun mendampingi<br />calon pengemudi</span></div>
+        <div><b>2</b><span>Cabang untuk melayani<br />Anda lebih dekat</span></div>
+        <div><b>08.00–17.00</b><span>Jam pelayanan<br />Senin–Sabtu</span></div>
+      </section>
+
       <section className="services section" id="layanan">
         <div className="section-heading landing-heading"><div><p className="eyebrow">KENAPA ARJUNA JAYA</p><h2>Satu langkah menuju<br />lebih percaya diri.</h2></div><p>Sejak 2013, kami mendampingi calon pengemudi dengan pelatihan yang sabar, bertahap, dan praktis.</p></div>
         <div className="service-grid">
@@ -92,8 +98,13 @@ export default function Home() {
       </section>
 
       <section className="reviews section" id="ulasan">
-        <div className="review-feature"><p className="eyebrow">SIAP MULAI BELAJAR?</p><h2>Pilih cabang, lalu konsultasikan kebutuhan Anda.</h2><p>Tim LKP Arjuna Jaya siap membantu memilihkan informasi kursus yang sesuai.</p><button className="button button-primary" onClick={openBranch}>Tanya Jadwal Kursus</button></div>
-        <div className="review-note"><span>★</span><h3>Belajar dengan nyaman</h3><p>Materi teori dan praktik dirancang untuk membantu Anda memahami kendaraan serta lebih siap berkendara di jalan raya.</p></div>
+        <div className="section-heading review-heading"><div><p className="eyebrow">ULASAN PESERTA</p><h2>Belajar lebih tenang,<br />berani di jalan.</h2></div><p>Pengalaman nyata peserta yang telah belajar bersama LKP Arjuna Jaya Rajapolah.</p></div>
+        <div className="testimonial-grid">
+          <article className="testimonial"><div className="testimonial-top"><span className="avatar">A</span><div><b>Ari Teacher Bahasa</b><small>Ulasan Google · 5★</small></div></div><p>“Saya belajar mengemudi dari nol. Pelatihnya sangat baik dan kompeten dalam mengajari siswanya untuk belajar mengemudi.”</p></article>
+          <article className="testimonial featured"><div className="testimonial-top"><span className="avatar">N</span><div><b>Nia Indah Pujiati</b><small>Ulasan Google · 5★</small></div></div><p>“Pelatihnya sabar, santai, dan setiap penjelasan mudah dipahami. Waktu fleksibel bisa menyesuaikan.”</p></article>
+          <article className="testimonial"><div className="testimonial-top"><span className="avatar">D</span><div><b>Desarah Nur Azizah</b><small>Ulasan Google · 5★</small></div></div><p>“Belajar mobil dari nol didampingi dengan sabar. Intinya saat menyetir harus fokus dan percaya diri.”</p></article>
+        </div>
+        <div className="review-cta"><div><p className="eyebrow">SIAP MULAI BELAJAR?</p><h3>Pilih cabang, lalu konsultasikan kebutuhan Anda.</h3></div><button className="button button-primary" onClick={openBranch}>Tanya Jadwal Kursus</button></div>
       </section>
 
       <footer><div className="footer-brand"><img src="/logo-arjuna-jaya.png" alt="Logo LKP Arjuna Jaya" /><div><b>LKP ARJUNA JAYA</b><p>Kursus Mengemudi Rajapolah</p></div></div><p>© {new Date().getFullYear()} LKP Arjuna Jaya. Semua hak dilindungi.</p></footer>
