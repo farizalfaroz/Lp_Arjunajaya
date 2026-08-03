@@ -36,31 +36,20 @@ function WhatsAppIcon() {
 }
 
 export default function Home() {
-  const [menuOpen, setMenuOpen] = useState(false);
   const [branchOpen, setBranchOpen] = useState(false);
 
   const openBranch = () => {
-    setMenuOpen(false);
     setBranchOpen(true);
   };
 
   return (
     <main>
-      <header className="site-header">
-        <a className="brand" href="#beranda" aria-label="LKP Arjuna Jaya, kembali ke beranda">
+      <header className="landing-header">
+        <a className="brand" href="#beranda" aria-label="LKP Arjuna Jaya">
           <img src="/logo-arjuna-jaya.png" alt="Logo LKP Arjuna Jaya" />
           <span><b>LKP ARJUNA JAYA</b><small>Rajapolah</small></span>
         </a>
-        <button className="menu-toggle" onClick={() => setMenuOpen(!menuOpen)} aria-expanded={menuOpen} aria-controls="site-menu">
-          <span></span><span></span><span></span><i>Menu</i>
-        </button>
-        <nav id="site-menu" className={menuOpen ? "open" : ""} aria-label="Navigasi utama">
-          <a href="#tentang" onClick={() => setMenuOpen(false)}>Tentang</a>
-          <a href="#layanan" onClick={() => setMenuOpen(false)}>Layanan</a>
-          <a href="#materi" onClick={() => setMenuOpen(false)}>Materi</a>
-          <a href="#cabang" onClick={() => setMenuOpen(false)}>Cabang</a>
-          <button className="nav-cta" onClick={openBranch}>Hubungi Kami</button>
-        </nav>
+        <button className="header-cta" onClick={openBranch}>Hubungi Kami</button>
       </header>
 
       <section className="hero" id="beranda">
@@ -81,17 +70,8 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="intro section" id="tentang">
-        <p className="eyebrow">TENTANG KAMI</p>
-        <div className="intro-grid">
-          <h2>Belajar mengemudi bukan hanya soal memegang setir.</h2>
-          <div><p>Lembaga Kursus dan Pelatihan Arjuna Jaya adalah lembaga pendidikan nonformal bagi masyarakat yang memerlukan bekal pengetahuan, keterampilan, kecakapan, dan mental dalam berkendara, khususnya kendaraan roda empat.</p><p>Didirikan pada tahun 2013 dan berada di bawah naungan CV. Arjuna Jaya Corp, kami tumbuh menjadi lembaga kursus mengemudi yang terpercaya dan bisa diandalkan.</p></div>
-        </div>
-        <div className="stats"><div><b>13+</b><span>Tahun mendampingi<br />calon pengemudi</span></div><div><b>2</b><span>Cabang untuk melayani<br />Anda lebih dekat</span></div><div><b>08.00–17.00</b><span>Jam pelayanan<br />Senin–Sabtu</span></div></div>
-      </section>
-
       <section className="services section" id="layanan">
-        <div className="section-heading"><div><p className="eyebrow">LAYANAN KAMI</p><h2>Yang dapat kami bantu.</h2></div><p>Pelayanan yang praktis untuk menemani perjalanan Anda menjadi pengemudi yang lebih siap.</p></div>
+        <div className="section-heading landing-heading"><div><p className="eyebrow">KENAPA ARJUNA JAYA</p><h2>Satu langkah menuju<br />lebih percaya diri.</h2></div><p>Sejak 2013, kami mendampingi calon pengemudi dengan pelatihan yang sabar, bertahap, dan praktis.</p></div>
         <div className="service-grid">
           <article className="service-card"><span className="service-number">01</span><div className="service-icon">▱</div><h3>Kursus Mengemudi</h3><p>Pelatihan bertahap dari pengenalan kendaraan hingga praktik berkendara di jalan raya.</p><a href="#materi">Pelajari materi <span>→</span></a></article>
           <article className="service-card accent"><span className="service-number">02</span><div className="service-icon">▤</div><h3>Layanan Pembuatan SIM</h3><p>Bantuan informasi dan layanan pembuatan SIM untuk melengkapi kebutuhan berkendara Anda.</p><button onClick={openBranch}>Tanyakan layanan <span>→</span></button></article>
@@ -112,11 +92,11 @@ export default function Home() {
       </section>
 
       <section className="reviews section" id="ulasan">
-        <div className="review-feature"><p className="eyebrow">KOMITMEN KAMI</p><h2>Mendampingi langkah awal Anda dengan sabar.</h2><p>Kami percaya kepercayaan diri tumbuh dari proses belajar yang nyaman, terarah, dan bertahap.</p><button className="button button-primary" onClick={openBranch}>Tanya Jadwal Kursus</button></div>
-        <div className="review-note"><span>★</span><h3>Ulasan peserta segera hadir</h3><p>Bagian ini disiapkan untuk menampilkan pengalaman belajar dari para peserta LKP Arjuna Jaya.</p></div>
+        <div className="review-feature"><p className="eyebrow">SIAP MULAI BELAJAR?</p><h2>Pilih cabang, lalu konsultasikan kebutuhan Anda.</h2><p>Tim LKP Arjuna Jaya siap membantu memilihkan informasi kursus yang sesuai.</p><button className="button button-primary" onClick={openBranch}>Tanya Jadwal Kursus</button></div>
+        <div className="review-note"><span>★</span><h3>Belajar dengan nyaman</h3><p>Materi teori dan praktik dirancang untuk membantu Anda memahami kendaraan serta lebih siap berkendara di jalan raya.</p></div>
       </section>
 
-      <footer><div className="footer-brand"><img src="/logo-arjuna-jaya.png" alt="Logo LKP Arjuna Jaya" /><div><b>LKP ARJUNA JAYA</b><p>Kursus Mengemudi Rajapolah</p></div></div><p>© {new Date().getFullYear()} LKP Arjuna Jaya. Semua hak dilindungi.</p><a href="#beranda">Kembali ke atas ↑</a></footer>
+      <footer><div className="footer-brand"><img src="/logo-arjuna-jaya.png" alt="Logo LKP Arjuna Jaya" /><div><b>LKP ARJUNA JAYA</b><p>Kursus Mengemudi Rajapolah</p></div></div><p>© {new Date().getFullYear()} LKP Arjuna Jaya. Semua hak dilindungi.</p></footer>
 
       <button className="floating-contact" onClick={openBranch} aria-label="Hubungi LKP Arjuna Jaya melalui WhatsApp"><WhatsAppIcon /><span>Hubungi Kami</span></button>
 
