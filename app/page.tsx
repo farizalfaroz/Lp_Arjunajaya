@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useState } from "react";
 
@@ -47,7 +47,7 @@ export default function Home() {
       <header className="landing-header">
         <a className="brand" href="#beranda" aria-label="LKP Arjuna Jaya">
           <img src="/logo-arjuna-jaya.png" alt="Logo LKP Arjuna Jaya" />
-          <span><b>LKP ARJUNA JAYA</b><small>Rajapolah</small></span>
+          <span><b>LKP ARJUNA JAYA</b></span>
         </a>
         <button className="header-cta" onClick={openBranch}>Hubungi Kami</button>
       </header>
@@ -56,31 +56,31 @@ export default function Home() {
         <div className="hero-copy">
           <p className="eyebrow">LEMBAGA KURSUS & PELATIHAN</p>
           <h1>Lebih siap di jalan,<br /><em>lebih percaya diri.</em></h1>
-          <p className="hero-lead">Belajar mengemudi dari dasar bersama instruktur yang sabar dan berpengalaman.</p>
+          <p className="hero-lead">Belajar mengemudi dari dasar bersama instruktur yang Professional dan Berpengalaman.</p>
           <div className="hero-actions">
             <button className="button button-primary" onClick={openBranch}><WhatsAppIcon /> Pilih Cabang</button>
             <a className="button button-ghost" href="#materi">Lihat Materi <span>↓</span></a>
           </div>
           <div className="hero-points"><span>✓ Instruktur berpengalaman</span><span>✓ Jadwal fleksibel</span></div>
         </div>
-        <div className="hero-art" aria-hidden="true">
-          <div className="sun"></div><div className="road"><i></i><i></i><i></i></div>
-          <div className="car"><div className="car-body"><b></b><b></b></div><div className="wheel left"></div><div className="wheel right"></div></div>
-          <p>Sejak<br /><b>2013</b></p>
+        <div className="hero-photo">
+          <img src="/armada-arjuna-jaya.webp" alt="Armada kursus mengemudi LKP Arjuna Jaya" />
+          <p>Armada<br /><b>Arjuna Jaya</b></p>
         </div>
       </section>
 
       <section className="trust-strip" aria-label="Ringkasan LKP Arjuna Jaya">
+        <div><b>1.300+</b><span>Peserta puas<br />bersama kami</span></div>
         <div><b>13+</b><span>Tahun mendampingi<br />calon pengemudi</span></div>
         <div><b>2</b><span>Cabang untuk melayani<br />Anda lebih dekat</span></div>
         <div><b>08.00–17.00</b><span>Jam pelayanan<br />Senin–Sabtu</span></div>
       </section>
 
       <section className="services section" id="layanan">
-        <div className="section-heading landing-heading"><div><p className="eyebrow">KENAPA ARJUNA JAYA</p><h2>Satu langkah menuju<br />lebih percaya diri.</h2></div><p>Sejak 2013, kami mendampingi calon pengemudi dengan pelatihan yang sabar, bertahap, dan praktis.</p></div>
+        <div className="section-heading landing-heading"><div><p className="eyebrow">KENAPA ARJUNA JAYA</p><h2>Satu langkah menuju<br />lebih percaya diri.</h2></div><p>Sejak 2013, kami secara konsisten mendampingi calon pengemudi melalui metode pelatihan bertahap yang terencana dan berfokus pada penguasaan keterampilan.</p></div>
         <div className="service-grid">
           <article className="service-card"><span className="service-number">01</span><div className="service-icon">▱</div><h3>Kursus Mengemudi</h3><p>Pelatihan bertahap dari pengenalan kendaraan hingga praktik berkendara di jalan raya.</p><a href="#materi">Pelajari materi <span>→</span></a></article>
-          <article className="service-card accent"><span className="service-number">02</span><div className="service-icon">▤</div><h3>Layanan Pembuatan SIM</h3><p>Bantuan informasi dan layanan pembuatan SIM untuk melengkapi kebutuhan berkendara Anda.</p><button onClick={openBranch}>Tanyakan layanan <span>→</span></button></article>
+          <article className="service-card accent"><span className="service-number">02</span><div className="service-icon">▤</div><h3>Pendampingan Layanan Pembuatan SIM</h3><p>Bantuan informasi dan layanan pembuatan SIM untuk melengkapi kebutuhan berkendara Anda. Hubungi cabang pilihan Anda untuk informasi jadwal, program, dan layanan.</p><button onClick={openBranch}>Tanyakan layanan <span>→</span></button></article>
         </div>
       </section>
 
@@ -107,7 +107,7 @@ export default function Home() {
         <div className="review-cta"><div><p className="eyebrow">SIAP MULAI BELAJAR?</p><h3>Pilih cabang, lalu konsultasikan kebutuhan Anda.</h3></div><button className="button button-primary" onClick={openBranch}>Tanya Jadwal Kursus</button></div>
       </section>
 
-      <footer><div className="footer-brand"><img src="/logo-arjuna-jaya.png" alt="Logo LKP Arjuna Jaya" /><div><b>LKP ARJUNA JAYA</b><p>Kursus Mengemudi Rajapolah</p></div></div><p>© {new Date().getFullYear()} LKP Arjuna Jaya. Semua hak dilindungi.</p></footer>
+      <footer><div className="footer-brand"><img src="/logo-arjuna-jaya.png" alt="Logo LKP Arjuna Jaya" /><div><b>LKP ARJUNA JAYA</b><p>Kursus mengemudi di Tasikmalaya</p></div></div><p>© {new Date().getFullYear()} LKP Arjuna Jaya. Semua hak dilindungi.</p></footer>
 
       <button className="floating-contact" onClick={openBranch} aria-label="Hubungi LKP Arjuna Jaya melalui WhatsApp"><WhatsAppIcon /><span>Hubungi Kami</span></button>
 
