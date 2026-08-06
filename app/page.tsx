@@ -98,7 +98,7 @@ export default function Home() {
       </section>
 
       <section className="reviews section" id="ulasan">
-        <div className="section-heading review-heading"><div><p className="eyebrow">ULASAN PESERTA</p><h2>Belajar lebih tenang,<br />berani di jalan.</h2></div><p>Pengalaman nyata peserta yang telah belajar bersama LKP Arjuna Jaya Rajapolah.</p></div>
+        <div className="section-heading review-heading"><div><p className="eyebrow">ULASAN PESERTA</p><h2>Belajar lebih tenang,<br />berani di jalan.</h2></div><p>Pengalaman nyata peserta yang telah belajar bersama LKP Arjuna Jaya.</p></div>
         <div className="testimonial-grid">
           <article className="testimonial"><div className="testimonial-top"><span className="avatar">A</span><div><b>Ari Teacher Bahasa</b><small>Ulasan Google · 5★</small></div></div><p>“Saya belajar mengemudi dari nol. Pelatihnya sangat baik dan kompeten dalam mengajari siswanya untuk belajar mengemudi.”</p></article>
           <article className="testimonial featured"><div className="testimonial-top"><span className="avatar">N</span><div><b>Nia Indah Pujiati</b><small>Ulasan Google · 5★</small></div></div><p>“Pelatihnya sabar, santai, dan setiap penjelasan mudah dipahami. Waktu fleksibel bisa menyesuaikan.”</p></article>
