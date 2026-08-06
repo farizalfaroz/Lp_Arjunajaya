@@ -95,6 +95,11 @@ h1,h2,h3,p { margin-top:0; }
 .mini-button.map { color:var(--navy); }
 
 /* REVIEWS */
+.testimonial.testimonial-more { background:var(--navy); border:none; display:flex; align-items:center; justify-content:center; min-height:120px; }
+.testimonial-more-inner { text-align:center; }
+.testimonial-more-stars { color:var(--yellow); font-size:22px; letter-spacing:3px; margin-bottom:8px; }
+.testimonial-more-count { color:white; font-family:Georgia,serif; font-size:36px; font-weight:800; margin:0; letter-spacing:-.03em; }
+.testimonial-more-label { color:#a9c4dc; font-size:12px; margin:6px 0 0; }
 .reviews { background:#edf3f7; }
 .review-heading { margin-bottom:26px; }
 .testimonial-grid { display:grid; gap:13px; }
