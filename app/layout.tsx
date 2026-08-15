@@ -5,8 +5,8 @@ export const metadata: Metadata = {
   title: "Kursus Mengemudi LKP Arjuna Jaya Rajapolah",
   description: "Kursus mengemudi mobil bersama LKP Arjuna Jaya Rajapolah.",
   icons: {
-    icon: "/favicon.svg",
-    shortcut: "/favicon.svg",
+    icon: "/logo-arjuna-jaya.png",
+    shortcut: "/logo-arjuna-jaya.png",
   },
 };
 
